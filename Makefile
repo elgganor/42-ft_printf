@@ -1,20 +1,12 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mrouabeh <mrouabeh@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/11/26 14:15:37 by mrouabeh          #+#    #+#              #
-#    Updated: 2019/11/26 14:15:38 by mrouabeh         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME=libftprintf.a
 
-SRCS= ft_printf.c
+SRCS=ft_printf.c \
+	./get_functions/get_flags.c \
+	./get_functions/get_type.c \
+	./get_functions/get_arg.c \
+	./utils_functions/flags_utils.c
 
-OBJ={SRC:.c=.o}
+OBJ=${SRCS:.c=.o}
 
 FLAGS=-Wall -Wextra -Werror
 
