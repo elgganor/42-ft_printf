@@ -35,12 +35,16 @@ typedef struct s_printf
 typedef struct	s_flags
 {
 	char	flag;
-	char	*width;
-	char	*precision;
+	int		width;
+	int		precision;
 }				t_flags;
 
 /*
 ** ========== PROTOTYPES ==========
 */
 int	ft_printf(const char *format, ...);
+t_flags *get_flags(const char *format, int *index, va_list ap);
+t_flags *flag_init();
+char get_type(const char *format, int index);
+char *get_arg(char type, va_list ap, int *index);
 #endif
