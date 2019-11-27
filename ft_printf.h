@@ -47,11 +47,17 @@ t_flags			*get_flags(const char *format, int *index, va_list ap);
 t_flags			*flag_init();
 char			get_type(const char *format, int index);
 char			*get_arg(t_printf *vars, va_list ap);
-void			ft_display(const char *format, t_printf *vars, t_flags *flags);
+void			ft_display(t_printf *vars, t_flags *flags);
 int				is_valide_type(char c);
 int				is_int(char type);
 int				is_hex(char type);
 int				is_char(char type);
 int				is_str(char type);
 int				get_char_number(t_flags *flags, t_printf *vars);
+int				get_space_number(t_flags *flags, int nb_char);
+void			display_char(t_printf *v, t_flags *fl, int nchar , int space);
+void			display_str(t_printf *v, t_flags *fl, int nchar , int space);
+void			display_int(t_printf *v, t_flags *fl, int nchar , int space);
+void			display_hex(t_printf *v, t_flags *fl, int nchar , int space);
+void			ft_putnchar(char c, size_t n);
 #endif
