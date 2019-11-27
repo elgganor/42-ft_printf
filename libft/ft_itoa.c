@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-unsigned int	ft_get_size(unsigned int n)
+static unsigned int	ft_get_size(unsigned int n)
 {
 	unsigned int	size;
 
