@@ -37,9 +37,12 @@ char *get_arg(char type, va_list ap, int *index)
 	else if (type == 's')
 		arg = va_arg(ap, char *);
 	else if (type == 'x' || type == 'X')
-		arg = ft_itohex(va_arg(ap, int));
-	// else if (type == 'p')
-		// arg = get_address((long)va_arg(ap, void *));
+	{
+		arg = ft_ltohex(va_arg(ap, int));
+		arg = (type == 'X') ? ft_strtoupper(arg) : arg;
+	}
+	else if (type == 'p')
+		arg = ft_ltohex((long)va_arg(ap, void *));
 	else
 		(*index)++;
 	return (arg);

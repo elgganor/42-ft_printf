@@ -3,17 +3,9 @@
 
 int main()
 {
-	ft_printf("%t\n");
-	ft_printf("======\n");
-	ft_printf("%d\n", 10);
-	ft_printf("======\n");
-	ft_printf("%i\n", 10);
-	ft_printf("======\n");
-	ft_printf("%%\n");
-	ft_printf("======\n");
-	ft_printf("% \n");
-	ft_printf("======\n");
-	ft_printf("%s\n", "hello");
-	ft_printf("======\n");
-	ft_printf("%c\n", 'e');
+	int *p;
+
+	ft_printf("%p\n", p);
+	printf("%p\n", p);
+	return (0);
 }
