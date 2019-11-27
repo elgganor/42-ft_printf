@@ -4,8 +4,10 @@
 int main()
 {
 	int *p;
+	int i;
 
-	ft_printf("%p\n", p);
-	printf("%p\n", p);
+	i = printf("%.5d", -1);
+	printf("\nprintf => %d\n", i);
+	ft_printf("%.5d\n", -1);
 	return (0);
 }

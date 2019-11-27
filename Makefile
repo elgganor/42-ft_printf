@@ -4,7 +4,9 @@ SRCS=ft_printf.c \
 	./get_functions/get_flags.c \
 	./get_functions/get_type.c \
 	./get_functions/get_arg.c \
-	./utils_functions/flags_utils.c
+	./get_functions/get_char_numbers.c \
+	./utils_functions/flags_utils.c \
+	./utils_functions/check_types.c
 
 OBJ=${SRCS:.c=.o}
 

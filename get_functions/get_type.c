@@ -12,17 +12,6 @@
 
 #include "../ft_printf.h"
 
-static int is_valide_type(char c)
-{
-	if (c == 'd' || c == 'i' || c == 'u')
-		return (1);
-	if (c == 's' || c == 'c' || c == '%')
-		return (1);
-	if (c == 'x' || c == 'X' || c =='p')
-		return (1);
-	return (0);
-}
-
 char	get_type(const char *format, int index)
 {
 	char type;

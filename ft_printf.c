@@ -19,8 +19,9 @@ void manage_display(const char *f, t_printf *vars, va_list ap)
 
 	flags = get_flags(f, &(vars->index), ap);
 	vars->type = get_type(f, vars->index);
-	vars->arg = get_arg(vars->type, ap, &(vars->index));
-	ft_display(f, vars, flags);
+	vars->arg = get_arg(vars, ap);
+	printf("nb_char => %d\n", get_char_number(flags, vars));
+	// ft_display(f, vars, flags);
 	vars->index++;
 	free(flags);
 }

@@ -26,24 +26,26 @@ static char *get_char(char type, va_list ap)
 	return (arg);
 }
 
-char *get_arg(char type, va_list ap, int *index)
+char *get_arg(t_printf *vars, va_list ap)
 {
 	char *arg;
 
-	if (type == 'i' || type == 'd')
+	if (vars->type == 'i' || vars->type == 'd')
 		arg = ft_itoa(va_arg(ap, int));
-	else if (type == 'c' || type == '%')
-		arg = get_char(type, ap);
-	else if (type == 's')
+	else if (vars->type == 'c' || vars->type == '%')
+		arg = get_char(vars->type, ap);
+	else if (vars->type == 's')
 		arg = va_arg(ap, char *);
-	else if (type == 'x' || type == 'X')
+	else if (vars->type == 'x' || vars->type == 'X')
 	{
 		arg = ft_ltohex(va_arg(ap, int));
-		arg = (type == 'X') ? ft_strtoupper(arg) : arg;
+		arg = (vars->type == 'X') ? ft_strtoupper(arg) : arg;
 	}
-	else if (type == 'p')
+	else if (vars->type == 'p')
 		arg = ft_ltohex((long)va_arg(ap, void *));
+	// else if (vars->type == 'u')
+		// arg = ft_unsigned(va_arg(ap, int));
 	else
-		(*index)++;
+		vars->index++;
 	return (arg);
 }
