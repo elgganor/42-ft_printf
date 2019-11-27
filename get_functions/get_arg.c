@@ -43,8 +43,8 @@ char *get_arg(t_printf *vars, va_list ap)
 	}
 	else if (vars->type == 'p')
 		arg = ft_ltohex((long)va_arg(ap, void *));
-	// else if (vars->type == 'u')
-		// arg = ft_unsigned(va_arg(ap, int));
+	else if (vars->type == 'u')
+		arg = ft_ltoa(ft_itou(va_arg(ap, int)));
 	else
 		vars->index++;
 	return (arg);
