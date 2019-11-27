@@ -6,8 +6,7 @@ int main()
 	int *p;
 	int i;
 
-	i = printf("%.5d", -1);
-	printf("\nprintf => %d\n", i);
-	ft_printf("%.5d\n", -1);
+	ft_printf("%4.3%\n");
+	printf("%4.3%\n");
 	return (0);
 }
