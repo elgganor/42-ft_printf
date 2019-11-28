@@ -35,7 +35,11 @@ char *get_arg(t_printf *vars, va_list ap)
 	else if (vars->type == 'c' || vars->type == '%')
 		arg = get_char(vars->type, ap);
 	else if (vars->type == 's')
+	{
 		arg = va_arg(ap, char *);
+		if (arg == NULL)
+			arg = ft_strdup("(null)");
+	}
 	else if (vars->type == 'x' || vars->type == 'X')
 	{
 		arg = ft_ltohex(va_arg(ap, int));

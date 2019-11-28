@@ -14,8 +14,6 @@
 
 static int get_char_number_str(t_flags *flags, t_printf *vars)
 {
-	// if (vars->arg == NULL)
-	// 	return (6);
 	if (flags->precision == -1)
 		return (ft_strlen(vars->arg));
 	else if (flags->precision == 0)
@@ -28,11 +26,12 @@ static int get_char_number_str(t_flags *flags, t_printf *vars)
 
 static int get_char_number_int(t_flags *flags, t_printf *vars)
 {
-	int	nb_char;
+	size_t	nb_char;
 
+	nb_char = 0;
 	if (flags->precision == -1)
 		nb_char = ft_strlen(vars->arg);
-	if (flags->precision >= ft_strlen(vars->arg))
+	else if (flags->precision >= ft_strlen(vars->arg))
 	{
 		nb_char = flags->precision;
 		if (vars->arg[0] == '-')
