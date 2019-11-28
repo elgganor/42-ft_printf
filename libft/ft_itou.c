@@ -12,12 +12,15 @@
 
 #include "libft.h"
 
-unsigned long ft_itou(int n)
+unsigned long ft_itou(long int n)
 {
-	long	max;
+	long int	max;
 
 	max = 4294967296;
 	if (n < 0)
-		n = max + n;
+	{
+		n = -n;
+		n = max - n;
+	}
 	return (n);
 }
