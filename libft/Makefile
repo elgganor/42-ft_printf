@@ -27,25 +27,27 @@ FLAGS=-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $^
-	ranlib $(NAME)
+	@ar rc $(NAME) $^
+	@ranlib $(NAME)
 
 .o: .c
-	gcc $(FLAGS) -I./ -o $@ -c $<
+	@gcc $(FLAGS) -I./ -o $@ -c $<
 
 bonus: $(OBJ) $(OBJ_BON)
-	ar rc $(NAME) $^
-	ranlib $(NAME)
+	@ar rc $(NAME) $^
+	@ranlib $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 clean_b:
-	rm -f $(OBJ_BON)
+	@rm -f $(OBJ_BON)
 
 fclean: clean clean_b
-	rm -f $(NAME)
+	@rm -f $(NAME)
 	
 re: fclean all
 
 .PHONY: all bonus clean clean_b fclean re
+
+.SILENT: $(OBJ)
