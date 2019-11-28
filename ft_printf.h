@@ -60,4 +60,5 @@ void			display_str(t_printf *v, t_flags *fl, int nchar , int space);
 void			display_int(t_printf *v, t_flags *fl, int nchar , int space);
 void			display_hex(t_printf *v, t_flags *fl, int nchar , int space);
 void			ft_putnchar(char c, size_t n);
+void			ft_putnstr(char *str, size_t n);
 #endif

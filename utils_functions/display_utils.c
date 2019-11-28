@@ -17,3 +17,12 @@ void	ft_putnchar(char c, size_t n)
 	while (n-- > 0)
 		ft_putchar(c);
 }
+
+void	ft_putnstr(char *str, size_t n)
+{
+	int	i;
+
+	i = 0;
+	while (i < n)
+		ft_putchar(str[i++]);
+}

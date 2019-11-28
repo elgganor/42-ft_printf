@@ -13,14 +13,21 @@
 #include "ft_printf.h"
 #include <stdio.h>
 
+void	print_flag(t_flags *flags)
+{
+	printf("flag: %c\n", flags->flag);
+	printf("width: %d\n", flags->width);
+	printf("precision: %d\n", flags->precision);
+}
+
 void manage_display(const char *f, t_printf *vars, va_list ap)
 {
 	t_flags *flags;
 
 	flags = get_flags(f, &(vars->index), ap);
+	// print_flag(flags);
 	vars->type = get_type(f, vars->index);
 	vars->arg = get_arg(vars, ap);
-	// printf("nb_char => %d\n", get_char_number(flags, vars));
 	ft_display(vars, flags);
 	vars->index++;
 	free(flags);
