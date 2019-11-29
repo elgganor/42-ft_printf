@@ -3,17 +3,13 @@
 
 int main()
 {
-	printf("p: %.*d\n", -10, 0);
-	ft_printf("f: %.*d\n", -10, 0);
-	
-	printf("p: %*.*d\n", 0, -5, 0);
-	ft_printf("f: %*.*d\n", 0, -5, 0);
+	//afficher 5
+	ft_printf("f: %.*d\n", -10, 5);
+	// ajouter 9 espaces à la fin
+	ft_printf("f: %.-10d\n", 5);
 
-	printf("p: %*.*d\n", 5, 0, 0);
-	ft_printf("f: %*.*d\n", 5, 0, 0);
-
-	printf("p: %*.*d\n", -5, 0, 0);
-	ft_printf("f: %*.*d\n", -5, 0, 0);
+	printf("p: %.*d\n", -10, 5);
+	printf("p: %.-10d\n", 5);
 
 	return (0);
 }

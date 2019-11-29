@@ -3314,8 +3314,8 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%.0x", -1) : ft_printf("%.0x", -1); //pb
-				printf("\n%d\n", r);
+				r = (fct == 1) ? printf("%.0x", -1) : ft_printf("%.0x", -1);
+				printf("\n%d\n", r); //pb
 			}
 		}
 		if (nb == i++)
@@ -3876,7 +3876,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0i", 0) : ft_printf("%1.0i", 0); //pb
+				r = (fct == 1) ? printf("%1.0i", 0) : ft_printf("%1.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -3916,7 +3916,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0i", 0) : ft_printf("%2.0i", 0); //pb
+				r = (fct == 1) ? printf("%2.0i", 0) : ft_printf("%2.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -3956,7 +3956,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0i", 0) : ft_printf("%10.0i", 0); //pb
+				r = (fct == 1) ? printf("%10.0i", 0) : ft_printf("%10.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4236,7 +4236,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0d", 0) : ft_printf("%1.0d", 0); //pb
+				r = (fct == 1) ? printf("%1.0d", 0) : ft_printf("%1.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4276,7 +4276,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0d", 0) : ft_printf("%2.0d", 0); //pb
+				r = (fct == 1) ? printf("%2.0d", 0) : ft_printf("%2.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4316,7 +4316,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0d", 0) : ft_printf("%10.0d", 0); //pb
+				r = (fct == 1) ? printf("%10.0d", 0) : ft_printf("%10.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4596,7 +4596,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0u", 0) : ft_printf("%1.0u", 0); //pb
+				r = (fct == 1) ? printf("%1.0u", 0) : ft_printf("%1.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4636,7 +4636,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0u", 0) : ft_printf("%2.0u", 0); //pb
+				r = (fct == 1) ? printf("%2.0u", 0) : ft_printf("%2.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4676,7 +4676,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0u", 0) : ft_printf("%10.0u", 0); //pb
+				r = (fct == 1) ? printf("%10.0u", 0) : ft_printf("%10.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4956,7 +4956,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0x", 0) : ft_printf("%1.0x", 0); //pb
+				r = (fct == 1) ? printf("%1.0x", 0) : ft_printf("%1.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -4996,7 +4996,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0x", 0) : ft_printf("%2.0x", 0); //pb
+				r = (fct == 1) ? printf("%2.0x", 0) : ft_printf("%2.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5036,7 +5036,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0x", 0) : ft_printf("%10.0x", 0); //pb
+				r = (fct == 1) ? printf("%10.0x", 0) : ft_printf("%10.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5076,7 +5076,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0x", -1) : ft_printf("%1.0x", -1); //pb
+				r = (fct == 1) ? printf("%1.0x", -1) : ft_printf("%1.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5116,7 +5116,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0x", -1) : ft_printf("%2.0x", -1); //pb
+				r = (fct == 1) ? printf("%2.0x", -1) : ft_printf("%2.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5156,7 +5156,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%3.0x", -1) : ft_printf("%3.0x", -1); //pb
+				r = (fct == 1) ? printf("%3.0x", -1) : ft_printf("%3.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5196,7 +5196,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%9.0x", UINT_MAX) : ft_printf("%9.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%9.0x", UINT_MAX) : ft_printf("%9.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5236,7 +5236,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0x", UINT_MAX) : ft_printf("%10.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%10.0x", UINT_MAX) : ft_printf("%10.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5276,7 +5276,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%11.0x", UINT_MAX) : ft_printf("%11.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%11.0x", UINT_MAX) : ft_printf("%11.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5316,7 +5316,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0X", 0) : ft_printf("%1.0X", 0); //pb
+				r = (fct == 1) ? printf("%1.0X", 0) : ft_printf("%1.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5356,7 +5356,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0X", 0) : ft_printf("%2.0X", 0); //pb
+				r = (fct == 1) ? printf("%2.0X", 0) : ft_printf("%2.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5396,7 +5396,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0X", 0) : ft_printf("%10.0X", 0); //pb
+				r = (fct == 1) ? printf("%10.0X", 0) : ft_printf("%10.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5436,7 +5436,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%1.0X", -1) : ft_printf("%1.0X", -1); //pb
+				r = (fct == 1) ? printf("%1.0X", -1) : ft_printf("%1.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5476,7 +5476,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%2.0X", -1) : ft_printf("%2.0X", -1); //pb
+				r = (fct == 1) ? printf("%2.0X", -1) : ft_printf("%2.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5516,7 +5516,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%3.0X", -1) : ft_printf("%3.0X", -1); //pb
+				r = (fct == 1) ? printf("%3.0X", -1) : ft_printf("%3.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5556,7 +5556,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%9.0X", UINT_MAX) : ft_printf("%9.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%9.0X", UINT_MAX) : ft_printf("%9.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5596,7 +5596,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%10.0X", UINT_MAX) : ft_printf("%10.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%10.0X", UINT_MAX) : ft_printf("%10.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5636,7 +5636,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%11.0X", UINT_MAX) : ft_printf("%11.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%11.0X", UINT_MAX) : ft_printf("%11.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5919,7 +5919,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0i", 0) : ft_printf("%-1.0i", 0); //pb
+				r = (fct == 1) ? printf("%-1.0i", 0) : ft_printf("%-1.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5959,7 +5959,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0i", 0) : ft_printf("%-2.0i", 0); //pb
+				r = (fct == 1) ? printf("%-2.0i", 0) : ft_printf("%-2.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -5999,7 +5999,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0i", 0) : ft_printf("%-10.0i", 0); //pb
+				r = (fct == 1) ? printf("%-10.0i", 0) : ft_printf("%-10.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6279,7 +6279,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0d", 0) : ft_printf("%-1.0d", 0); //pb
+				r = (fct == 1) ? printf("%-1.0d", 0) : ft_printf("%-1.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6319,7 +6319,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0d", 0) : ft_printf("%-2.0d", 0); //pb
+				r = (fct == 1) ? printf("%-2.0d", 0) : ft_printf("%-2.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6359,7 +6359,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0d", 0) : ft_printf("%-10.0d", 0); //pb
+				r = (fct == 1) ? printf("%-10.0d", 0) : ft_printf("%-10.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6639,7 +6639,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0u", 0) : ft_printf("%-1.0u", 0); //pb
+				r = (fct == 1) ? printf("%-1.0u", 0) : ft_printf("%-1.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6679,7 +6679,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0u", 0) : ft_printf("%-2.0u", 0); //pb
+				r = (fct == 1) ? printf("%-2.0u", 0) : ft_printf("%-2.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6719,7 +6719,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0u", 0) : ft_printf("%-10.0u", 0); //pb
+				r = (fct == 1) ? printf("%-10.0u", 0) : ft_printf("%-10.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -6999,7 +6999,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0x", 0) : ft_printf("%-1.0x", 0); //pb
+				r = (fct == 1) ? printf("%-1.0x", 0) : ft_printf("%-1.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7039,7 +7039,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0x", 0) : ft_printf("%-2.0x", 0); //pb
+				r = (fct == 1) ? printf("%-2.0x", 0) : ft_printf("%-2.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7079,7 +7079,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0x", 0) : ft_printf("%-10.0x", 0); //pb
+				r = (fct == 1) ? printf("%-10.0x", 0) : ft_printf("%-10.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7119,7 +7119,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0x", -1) : ft_printf("%-1.0x", -1); //pb
+				r = (fct == 1) ? printf("%-1.0x", -1) : ft_printf("%-1.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7159,7 +7159,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0x", -1) : ft_printf("%-2.0x", -1);//pb
+				r = (fct == 1) ? printf("%-2.0x", -1) : ft_printf("%-2.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7199,7 +7199,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-3.0x", -1) : ft_printf("%-3.0x", -1); //pb
+				r = (fct == 1) ? printf("%-3.0x", -1) : ft_printf("%-3.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7239,7 +7239,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-9.0x", UINT_MAX) : ft_printf("%-9.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-9.0x", UINT_MAX) : ft_printf("%-9.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7279,7 +7279,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0x", UINT_MAX) : ft_printf("%-10.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-10.0x", UINT_MAX) : ft_printf("%-10.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7319,7 +7319,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-11.0x", UINT_MAX) : ft_printf("%-11.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-11.0x", UINT_MAX) : ft_printf("%-11.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7359,7 +7359,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0X", 0) : ft_printf("%-1.0X", 0); //pb
+				r = (fct == 1) ? printf("%-1.0X", 0) : ft_printf("%-1.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7399,7 +7399,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0X", 0) : ft_printf("%-2.0X", 0); //pb
+				r = (fct == 1) ? printf("%-2.0X", 0) : ft_printf("%-2.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7439,7 +7439,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0X", 0) : ft_printf("%-10.0X", 0); //pb
+				r = (fct == 1) ? printf("%-10.0X", 0) : ft_printf("%-10.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7479,7 +7479,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-1.0X", -1) : ft_printf("%-1.0X", -1); //pb
+				r = (fct == 1) ? printf("%-1.0X", -1) : ft_printf("%-1.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7519,7 +7519,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-2.0X", -1) : ft_printf("%-2.0X", -1); //pb
+				r = (fct == 1) ? printf("%-2.0X", -1) : ft_printf("%-2.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7559,7 +7559,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-3.0X", -1) : ft_printf("%-3.0X", -1); //pb
+				r = (fct == 1) ? printf("%-3.0X", -1) : ft_printf("%-3.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7599,7 +7599,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-9.0X", UINT_MAX) : ft_printf("%-9.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-9.0X", UINT_MAX) : ft_printf("%-9.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7639,7 +7639,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-10.0X", UINT_MAX) : ft_printf("%-10.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-10.0X", UINT_MAX) : ft_printf("%-10.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7679,7 +7679,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%-11.0X", UINT_MAX) : ft_printf("%-11.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%-11.0X", UINT_MAX) : ft_printf("%-11.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7721,7 +7721,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0i", 0) : ft_printf("%01.0i", 0); //pb
+				r = (fct == 1) ? printf("%01.0i", 0) : ft_printf("%01.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7761,7 +7761,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0i", 0) : ft_printf("%02.0i", 0); //pb
+				r = (fct == 1) ? printf("%02.0i", 0) : ft_printf("%02.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -7801,7 +7801,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0i", 0) : ft_printf("%010.0i", 0); //pb
+				r = (fct == 1) ? printf("%010.0i", 0) : ft_printf("%010.0i", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8081,7 +8081,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0d", 0) : ft_printf("%01.0d", 0); //pb
+				r = (fct == 1) ? printf("%01.0d", 0) : ft_printf("%01.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8121,7 +8121,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0d", 0) : ft_printf("%02.0d", 0); //pb
+				r = (fct == 1) ? printf("%02.0d", 0) : ft_printf("%02.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8161,7 +8161,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0d", 0) : ft_printf("%010.0d", 0); //pb
+				r = (fct == 1) ? printf("%010.0d", 0) : ft_printf("%010.0d", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8441,7 +8441,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0u", 0) : ft_printf("%01.0u", 0); //pb
+				r = (fct == 1) ? printf("%01.0u", 0) : ft_printf("%01.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8481,7 +8481,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0u", 0) : ft_printf("%02.0u", 0); //pb
+				r = (fct == 1) ? printf("%02.0u", 0) : ft_printf("%02.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8521,7 +8521,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0u", 0) : ft_printf("%010.0u", 0); //pb
+				r = (fct == 1) ? printf("%010.0u", 0) : ft_printf("%010.0u", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8801,7 +8801,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0x", 0) : ft_printf("%01.0x", 0); //pb
+				r = (fct == 1) ? printf("%01.0x", 0) : ft_printf("%01.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8841,7 +8841,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0x", 0) : ft_printf("%02.0x", 0); //pb
+				r = (fct == 1) ? printf("%02.0x", 0) : ft_printf("%02.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8881,7 +8881,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0x", 0) : ft_printf("%010.0x", 0); //pb
+				r = (fct == 1) ? printf("%010.0x", 0) : ft_printf("%010.0x", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8921,7 +8921,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0x", -1) : ft_printf("%01.0x", -1); //pb
+				r = (fct == 1) ? printf("%01.0x", -1) : ft_printf("%01.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -8961,7 +8961,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0x", -1) : ft_printf("%02.0x", -1); //pb
+				r = (fct == 1) ? printf("%02.0x", -1) : ft_printf("%02.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9001,7 +9001,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%03.0x", -1) : ft_printf("%03.0x", -1); //pb
+				r = (fct == 1) ? printf("%03.0x", -1) : ft_printf("%03.0x", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9041,7 +9041,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%09.0x", UINT_MAX) : ft_printf("%09.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%09.0x", UINT_MAX) : ft_printf("%09.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9081,7 +9081,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0x", UINT_MAX) : ft_printf("%010.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%010.0x", UINT_MAX) : ft_printf("%010.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9121,7 +9121,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%011.0x", UINT_MAX) : ft_printf("%011.0x", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%011.0x", UINT_MAX) : ft_printf("%011.0x", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9161,7 +9161,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0X", 0) : ft_printf("%01.0X", 0); //pb
+				r = (fct == 1) ? printf("%01.0X", 0) : ft_printf("%01.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9201,7 +9201,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0X", 0) : ft_printf("%02.0X", 0); //pb
+				r = (fct == 1) ? printf("%02.0X", 0) : ft_printf("%02.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9241,7 +9241,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{
-				r = (fct == 1) ? printf("%010.0X", 0) : ft_printf("%010.0X", 0); //pb
+				r = (fct == 1) ? printf("%010.0X", 0) : ft_printf("%010.0X", 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9281,7 +9281,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%01.0X", -1) : ft_printf("%01.0X", -1); //pb
+				r = (fct == 1) ? printf("%01.0X", -1) : ft_printf("%01.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9321,7 +9321,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%02.0X", -1) : ft_printf("%02.0X", -1); //pb
+				r = (fct == 1) ? printf("%02.0X", -1) : ft_printf("%02.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9361,7 +9361,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%03.0X", -1) : ft_printf("%03.0X", -1); //pb
+				r = (fct == 1) ? printf("%03.0X", -1) : ft_printf("%03.0X", -1);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9401,7 +9401,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%09.0X", UINT_MAX) : ft_printf("%09.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%09.0X", UINT_MAX) : ft_printf("%09.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9441,7 +9441,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%010.0X", UINT_MAX) : ft_printf("%010.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%010.0X", UINT_MAX) : ft_printf("%010.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9481,7 +9481,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%011.0X", UINT_MAX) : ft_printf("%011.0X", UINT_MAX); //pb
+				r = (fct == 1) ? printf("%011.0X", UINT_MAX) : ft_printf("%011.0X", UINT_MAX);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9734,7 +9734,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%.*d", -10, 0) : ft_printf("%.*d", -10, 0); //pb
+				r = (fct == 1) ? printf("%.*d", -10, 0) : ft_printf("%.*d", -10, 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9774,7 +9774,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%.*s", -3, "Hello") : ft_printf("%.*s", -3, "Hello"); //pb
+				r = (fct == 1) ? printf("%.*s", -3, "Hello") : ft_printf("%.*s", -3, "Hello");
 				printf("\n%d\n", r);
 			}
 		}
@@ -9844,7 +9844,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%*.*d", 0, -5, 0) : ft_printf("%*.*d", 0, -5, 0); //pb
+				r = (fct == 1) ? printf("%*.*d", 0, -5, 0) : ft_printf("%*.*d", 0, -5, 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9854,7 +9854,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%*.*d", 5, 0, 0) : ft_printf("%*.*d", 5, 0, 0); //pb
+				r = (fct == 1) ? printf("%*.*d", 5, 0, 0) : ft_printf("%*.*d", 5, 0, 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9864,7 +9864,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%*.*d", -5, 0, 0) : ft_printf("%*.*d", -5, 0, 0); //pb
+				r = (fct == 1) ? printf("%*.*d", -5, 0, 0) : ft_printf("%*.*d", -5, 0, 0);
 				printf("\n%d\n", r);
 			}
 		}
@@ -9924,7 +9924,7 @@ int main(int ac, char **av)
 				printf("cas%d - ligne: %d\n", nb, __LINE__ + 3);
 			else if (fct == 1 || fct == 2)
 			{	
-				r = (fct == 1) ? printf("%*.*s", 0, -5, "Hello") : ft_printf("%*.*s", 0, -5, "Hello"); //pb
+				r = (fct == 1) ? printf("%*.*s", 0, -5, "Hello") : ft_printf("%*.*s", 0, -5, "Hello");
 				printf("\n%d\n", r);
 			}
 		}

@@ -12,21 +12,21 @@
 
 NAME= libft.a
 
-SRC=./display/ft_putnbr.c \
+DISPLAY=./display/ft_putnbr.c \
 	./display/ft_putchar_fd.c \
 	./display/ft_putendl_fd.c \
 	./display/ft_putnbr_fd.c \
 	./display/ft_putstr_fd.c \
 	./display/ft_putchar.c \
-	./display/ft_putstr.c \
-	./checker/ft_islower.c \
+	./display/ft_putstr.c 
+CHECKER=./checker/ft_islower.c \
 	./checker/ft_isupper.c \
 	./checker/ft_isalnum.c \
 	./checker/ft_isalpha.c \
 	./checker/ft_isascii.c \
 	./checker/ft_isdigit.c \
-	./checker/ft_isprint.c \
-	./convert/ft_tolower.c \
+	./checker/ft_isprint.c
+CONVERT=./convert/ft_tolower.c \
 	./convert/ft_toupper.c \
 	./convert/ft_ltohex.c \
 	./convert/ft_strtoupper.c \
@@ -35,15 +35,16 @@ SRC=./display/ft_putnbr.c \
 	./convert/ft_abs.c \
 	./convert/ft_atoi.c \
 	./convert/ft_itoa.c \
-	./memory/ft_bzero.c \
+	./convert/ft_atol.c
+MEMORY=./memory/ft_bzero.c \
 	./memory/ft_calloc.c \
 	./memory/ft_memccpy.c \
 	./memory/ft_memchr.c \
 	./memory/ft_memcmp.c \
 	./memory/ft_memcpy.c \
 	./memory/ft_memmove.c \
-	./memory/ft_memset.c \
-	./string/ft_split.c \
+	./memory/ft_memset.c
+STRING=./string/ft_split.c \
 	./string/ft_strchr.c \
 	./string/ft_strdup.c \
 	./string/ft_strjoin.c \
@@ -55,11 +56,12 @@ SRC=./display/ft_putnbr.c \
 	./string/ft_strnstr.c \
 	./string/ft_strrchr.c \
 	./string/ft_strtrim.c \
-	./string/ft_substr.c 
+	./string/ft_substr.c \
+	./string/ft_strcmp.c 
+
+SRC=$(DISPLAY) $(CHECKER) $(CONVERT) $(MEMORY) $(STRING)
 
 OBJ= $(SRC:.c=.o)
-
-OBJ_BON= $(BONUS:.c=.o)
 
 BONUS=./linked_list/ft_lstadd_front_bonus.c \
 	./linked_list/ft_lstadd_back_bonus.c \
@@ -70,6 +72,8 @@ BONUS=./linked_list/ft_lstadd_front_bonus.c \
 	./linked_list/ft_lstlast_bonus.c \
 	./linked_list/ft_lstnew_bonus.c \
 	./linked_list/ft_lstsize_bonus.c
+
+OBJ_BON= $(BONUS:.c=.o)
 
 FLAGS=-Wall -Wextra -Werror
 

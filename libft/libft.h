@@ -45,6 +45,7 @@ char			*ft_ltohex(long l);
 char			*ft_strtoupper(char *s);
 unsigned int	ft_itou(int n);
 char			*ft_ltoa(long n);
+long			ft_atol(char *str);
 
 /*
 ** ==== linked_list ====
@@ -86,6 +87,7 @@ void			ft_putnbr_fd(int n, int fd);
 ** ==== string manipulation ====
 */
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
+int				ft_strcmp(const char *s1, const char *s2);
 size_t			ft_strlen(const char *str);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
