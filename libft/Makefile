@@ -12,13 +12,64 @@
 
 NAME= libft.a
 
-SRC=ft_putnbr.c ft_islower.c ft_isupper.c ft_abs.c ft_putchar.c ft_putstr.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strchr.c ft_strdup.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_ltohex.c ft_strtoupper.c ft_itou.c ft_ltoa.c
+SRC=./display/ft_putnbr.c \
+	./display/ft_putchar_fd.c \
+	./display/ft_putendl_fd.c \
+	./display/ft_putnbr_fd.c \
+	./display/ft_putstr_fd.c \
+	./display/ft_putchar.c \
+	./display/ft_putstr.c \
+	./checker/ft_islower.c \
+	./checker/ft_isupper.c \
+	./checker/ft_isalnum.c \
+	./checker/ft_isalpha.c \
+	./checker/ft_isascii.c \
+	./checker/ft_isdigit.c \
+	./checker/ft_isprint.c \
+	./convert/ft_tolower.c \
+	./convert/ft_toupper.c \
+	./convert/ft_ltohex.c \
+	./convert/ft_strtoupper.c \
+	./convert/ft_itou.c \
+	./convert/ft_ltoa.c \
+	./convert/ft_abs.c \
+	./convert/ft_atoi.c \
+	./convert/ft_itoa.c \
+	./memory/ft_bzero.c \
+	./memory/ft_calloc.c \
+	./memory/ft_memccpy.c \
+	./memory/ft_memchr.c \
+	./memory/ft_memcmp.c \
+	./memory/ft_memcpy.c \
+	./memory/ft_memmove.c \
+	./memory/ft_memset.c \
+	./string/ft_split.c \
+	./string/ft_strchr.c \
+	./string/ft_strdup.c \
+	./string/ft_strjoin.c \
+	./string/ft_strlcat.c \
+	./string/ft_strlcpy.c \
+	./string/ft_strlen.c \
+	./string/ft_strmapi.c \
+	./string/ft_strncmp.c \
+	./string/ft_strnstr.c \
+	./string/ft_strrchr.c \
+	./string/ft_strtrim.c \
+	./string/ft_substr.c 
 
 OBJ= $(SRC:.c=.o)
 
 OBJ_BON= $(BONUS:.c=.o)
 
-BONUS=ft_lstadd_front_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c ft_lstlast_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c
+BONUS=./linked_list/ft_lstadd_front_bonus.c \
+	./linked_list/ft_lstadd_back_bonus.c \
+	./linked_list/ft_lstdelone_bonus.c \
+	./linked_list/ft_lstclear_bonus.c \
+	./linked_list/ft_lstiter_bonus.c \
+	./linked_list/ft_lstmap_bonus.c \
+	./linked_list/ft_lstlast_bonus.c \
+	./linked_list/ft_lstnew_bonus.c \
+	./linked_list/ft_lstsize_bonus.c
 
 FLAGS=-Wall -Wextra -Werror
 
