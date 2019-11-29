@@ -3,7 +3,17 @@
 
 int main()
 {
-	printf("%u\n", -789);
-	ft_printf("%u\n", -789);
+	printf("p: %.*d\n", -10, 0);
+	ft_printf("f: %.*d\n", -10, 0);
+	
+	printf("p: %*.*d\n", 0, -5, 0);
+	ft_printf("f: %*.*d\n", 0, -5, 0);
+
+	printf("p: %*.*d\n", 5, 0, 0);
+	ft_printf("f: %*.*d\n", 5, 0, 0);
+
+	printf("p: %*.*d\n", -5, 0, 0);
+	ft_printf("f: %*.*d\n", -5, 0, 0);
+
 	return (0);
 }

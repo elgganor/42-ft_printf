@@ -12,39 +12,47 @@
 
 #include "libft.h"
 
-static unsigned int ft_get_size(unsigned int n)
+static int get_size(long n)
 {
-	unsigned int size;
+	int size;
 
 	size = 0;
+	if (n < 0)
+	{
+		size++;
+		n = -n;
+	}
 	while (n >= 10)
 	{
-		n /= 10;
 		size++;
+		n /= 10;
 	}
 	return (size + 1);
 }
 
 char *ft_ltoa(long n)
 {
-	unsigned long int nb;
-	unsigned long int size;
-	long int i;
-	char *str;
+	int size;
+	int i;
+	char *dest;
 
-	nb = (n < 0) ? (unsigned int)(n * -1) : (unsigned int)n;
-	size = (n < 0) ? ft_get_size(nb) + 1 : ft_get_size(nb);
-	if (!(str = (char *)malloc(sizeof(char) * (size + 1))))
-		return (0);
-	if (n < 0)
-		str[0] = '-';
+	if (n < -9223372036854775807)
+		return ("-9223372036854775808");
+	size = get_size(n);
+	if (!(dest = (char *)malloc(sizeof(char) * (size + 1))))
+		return (NULL);
 	i = size - 1;
-	str[size] = '\0';
-	while (nb >= 10)
+	dest[size] = '\0';
+	if (n < 0)
 	{
-		str[i--] = (nb % 10) + '0';
-		nb /= 10;
+		dest[0] = '-';
+		n = -n;
 	}
-	str[i] = (nb % 10) + '0';
-	return (str);
+	while (n >= 10)
+	{
+		dest[i--] = n % 10 + '0';
+		n /= 10;
+	}
+	dest[i] = n % 10 + '0';
+	return (dest);
 }

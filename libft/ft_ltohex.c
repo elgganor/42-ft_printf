@@ -12,50 +12,48 @@
 
 #include "libft.h"
 
-static long get_size(long l)
+static int get_size(long l)
 {
-	long size;
+	int size;
 
 	size = 0;
 	while (l != 0)
 	{
-		l /= 16;
 		size++;
+		l /= 16;
 	}
 	return (size);
 }
-
-static long ft_neg(long l)
+static long convert_neg(long l)
 {
-	long max;
+	unsigned long max;
 
-	max = 4294967295;
-	l = max - l + 1;
-	return (l);
+	max = 4294967296;
+	return (max + l);
 }
 
 char *ft_ltohex(long l)
 {
-	char	*base;
-	char	*hex;
-	long	len;
-	long	i;
+	char *base;
+	char *dest;
+	int size;
+	int i;
 
 	base = ft_strdup("0123456789abcdef");
 	if (l == 0)
 		return ("0");
 	if (l < 0)
-		l = ft_neg(-l);
-	len = get_size(l);
-	if (!(hex = (char *)malloc(sizeof(char) * (len + 1))))
+		l = convert_neg(l);
+	size = get_size(l);
+	if (!(dest = (char *)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
-	i = 1;
-	while (l)
+	dest[size] = '\0';
+	i = size - 1;
+	while (l != 0)
 	{
-		hex[len - i++] = base[l % 16];
+		dest[i--] = base[l % 16];
 		l /= 16;
 	}
-	hex[len] = '\0';
 	free(base);
-	return (hex);
+	return (dest);
 }

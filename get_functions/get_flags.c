@@ -76,8 +76,10 @@ t_flags *get_flags(const char *format, int *index, va_list ap)
 	int		z;
 
 	flags = flag_init();
+	//flag
 	if (format[*index] == '-' || format[*index] == '0')
 		flags->flag = get_flag(format, index);
+	//width
 	if (format[*index] == '*')
 	{
 		z = 0;
@@ -86,6 +88,7 @@ t_flags *get_flags(const char *format, int *index, va_list ap)
 	}
 	else if (ft_isdigit(format[*index]))
 		flags->width = get_width(format, index, &(flags->flag));
+	//precision
 	if (format[*index] == '.' && ft_isdigit(format[++(*index)]))
 		flags->precision = get_precision(format, index);
 	else if (format[*index - 1] == '.' && format[(*index)] == '*')

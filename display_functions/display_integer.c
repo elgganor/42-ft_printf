@@ -12,15 +12,13 @@
 
 #include "../ft_printf.h"
 
-// is_part_case
-// manage_part_case
 static void	ft_putint(t_printf *vars, t_flags *flags, int nb_char)
 {
 	int	i;
 	int	nb_zero;
 
 	i = 0;
-	if (vars->arg[i] == '-' && vars->type != 'u')
+	if (vars->arg[i] == '-')
 	{
 		ft_putchar('-');
 		i++;
@@ -30,7 +28,12 @@ static void	ft_putint(t_printf *vars, t_flags *flags, int nb_char)
 	if (nb_zero > 0)
 		ft_putnchar('0', nb_zero);
 	if (ft_atoi(vars->arg) == 0 && flags->precision == 0)
-		vars->return_size--;
+	{
+		if (flags->width == -1)
+			vars->return_size--;
+		else
+			ft_putchar(' ');
+	}
 	else
 		ft_putstr(&(vars->arg[i]));
 }

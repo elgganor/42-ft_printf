@@ -31,7 +31,7 @@ function test {
 if [ $1 == 0 -o $1 == 1 ]
 then
 	echo "\033[0;34m [A - Tests without options] \033[0m"
-	for i in {1..71}
+	for i in {1..70}
 	do
 		test $i
 	done
@@ -40,7 +40,7 @@ fi
 if [ $1 == 0 -o $1 == 2 ]
 then
 	echo "\033[0;34m [B - Tests with minimum field width] \033[0m"
-	for i in {72..129}
+	for i in {71..128}
 	do
 		test $i
 	done
@@ -49,7 +49,7 @@ fi
 if [ $1 == 0 -o $1 == 3 ]
 then
 	echo "\033[0;34m [C - Tests with flag -] \033[0m"
-	for i in {130..185}
+	for i in {129..184}
 	do
 		test $i
 	done
@@ -58,7 +58,7 @@ fi
 if [ $1 == 0 -o $1 == 4 ]
 then
 	echo "\033[0;34m [D - Tests with flag 0] \033[0m"
-	for i in {186..232}
+	for i in {185..231}
 	do
 		test $i
 	done
@@ -67,7 +67,7 @@ fi
 if [ $1 == 0 -o $1 == 5 ]
 then
 	echo "\033[0;34m [E - Tests with .] \033[0m"
-	for i in {233..361}
+	for i in {232..361}
 	do
 		test $i
 	done
@@ -76,7 +76,7 @@ fi
 if [ $1 == 0 -o $1 == 6 ]
 then
 	echo "\033[0;34m [F - Tests with minimum field width and .] \033[0m"
-	for i in {362..565}
+	for i in {361..564}
 	do
 		test $i
 	done
@@ -85,7 +85,7 @@ fi
 if [ $1 == 0 -o $1 == 7 ]
 then
 	echo "\033[0;34m [G - Tests with minimum field width, flag - and .] \033[0m"
-	for i in {566..769}
+	for i in {565..768}
 	do
 		test $i
 	done
@@ -94,7 +94,7 @@ fi
 if [ $1 == 0 -o $1 == 8 ]
 then
 	echo "\033[0;34m [H - Tests with minimum field width, flag 0 and .] \033[0m"
-	for i in {770..949}
+	for i in {769..948}
 	do
 		test $i
 	done
@@ -103,7 +103,7 @@ fi
 if [ $1 == 0 -o $1 == 9 ]
 then
 	echo "\033[0;34m [I - Tests with *] \033[0m"
-	for i in {950..993}
+	for i in {949..992}
 	do
 		test $i
 	done
@@ -116,4 +116,10 @@ then
 	cat -e test_output
 	echo "\n=== user_output ==="
 	cat -e user_output
+fi
+
+if [ $1 == "rm" ]
+then
+	make fclean
+	rm -f cas ft_printf test_output user_output
 fi
