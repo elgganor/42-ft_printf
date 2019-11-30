@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <limits.h>
 
 static int get_size(long l)
 {
@@ -24,6 +25,7 @@ static int get_size(long l)
 	}
 	return (size);
 }
+
 static long convert_neg(long l)
 {
 	unsigned long max;
