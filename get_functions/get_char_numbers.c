@@ -12,7 +12,7 @@
 
 #include "../ft_printf.h"
 
-static int get_char_number_str(t_flags *flags, t_printf *vars)
+static int	get_char_number_str(t_flags *flags, t_printf *vars)
 {
 	if (flags->precision == -1)
 		return (ft_strlen(vars->arg));
@@ -24,7 +24,7 @@ static int get_char_number_str(t_flags *flags, t_printf *vars)
 		return (flags->precision);
 }
 
-static int get_char_number_int(t_flags *flags, t_printf *vars)
+static int	get_char_number_int(t_flags *flags, t_printf *vars)
 {
 	size_t	nb_char;
 
@@ -42,9 +42,9 @@ static int get_char_number_int(t_flags *flags, t_printf *vars)
 	return (nb_char);
 }
 
-static int get_char_number_hex(t_flags *flags, t_printf *vars)
+static int	get_char_number_hex(t_flags *flags, t_printf *vars)
 {
-	int nb_char;
+	int	nb_char;
 
 	nb_char = 0;
 	if (vars->type == 'p')
@@ -58,7 +58,7 @@ static int get_char_number_hex(t_flags *flags, t_printf *vars)
 	return (nb_char);
 }
 
-int	get_char_number(t_flags *flags, t_printf *vars)
+int			get_char_number(t_flags *flags, t_printf *vars)
 {
 	int	nb_char;
 

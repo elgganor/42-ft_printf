@@ -12,40 +12,31 @@
 
 #include "../ft_printf.h"
 
-t_flags *get_flags(const char *format, int *index, va_list ap)
+t_flags	*get_flags(const char *f, int *index, va_list ap)
 {
-	t_flags *flags;
+	t_flags	*fl;
 	int		z;
 
-	flags = flag_init();
-	// flag
-	if (format[*index] == '-' || format[*index] == '0')
-		flags->flag = get_flag(format, index);
-
-
-	// width
-	if (format[*index] == '*')
+	fl = flag_init();
+	if (f[*index] == '-' || f[*index] == '0')
+		fl->flag = get_flag(f, index);
+	if (f[*index] == '*')
 	{
 		z = 0;
-		flags->width = get_width(ft_itoa(va_arg(ap, int)), &z, &(flags->flag));
+		fl->width = get_width(ft_itoa(va_arg(ap, int)), &z, &(fl->flag));
 		(*index)++;
 	}
-	else if (ft_isdigit(format[*index]) || format[*index] == '-')
-		flags->width = get_width(format, index, &(flags->flag));
-
-
-	// precision
-	if (format[*index] == '.' && (ft_isdigit(format[++(*index)]) || format[*index] == '-'))
-		flags->precision = get_precision(format, index, flags);
-	else if (format[*index - 1] == '.' && format[(*index)] == '*')
+	else if (ft_isdigit(f[*index]) || f[*index] == '-')
+		fl->width = get_width(f, index, &(fl->flag));
+	if (f[*index] == '.' && (ft_isdigit(f[++(*index)]) || f[*index] == '-'))
+		fl->precision = get_precision(f, index, fl);
+	else if (f[*index - 1] == '.' && f[(*index)] == '*')
 	{
 		z = 0;
-		flags->precision = get_precision_star(ft_itoa(va_arg(ap, int)), &z, flags);
+		fl->precision = get_precision_star(ft_itoa(va_arg(ap, int)), &z, fl);
 		(*index)++;
 	}
-	else if (format[*index - 1] == '.')
-		flags->precision = 0;
-
-
-	return (flags);
+	else if (f[*index - 1] == '.')
+		fl->precision = 0;
+	return (fl);
 }

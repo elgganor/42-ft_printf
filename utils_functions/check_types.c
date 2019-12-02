@@ -40,7 +40,7 @@ int	is_str(char type)
 	return (0);
 }
 
-int is_valide_type(char c)
+int	is_valide_type(char c)
 {
 	if (c == 'd' || c == 'i' || c == 'u')
 		return (1);

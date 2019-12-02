@@ -12,7 +12,7 @@
 
 #include "../ft_printf.h"
 
-int get_space_number(t_flags *flags, int nb_char)
+int	get_space_number(t_flags *flags, int nb_char)
 {
 	if (!flags || flags->width == -1)
 		return (0);

@@ -6,13 +6,13 @@
 /*   By: mrouabeh <mrouabeh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/27 22:45:09 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/11/27 22:45:11 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/12/02 14:11:10 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-static void ft_puthex(t_printf *vars, t_flags *flags, int nb_char)
+static void	ft_puthex(t_printf *vars, t_flags *flags, int nb_char)
 {
 	int i;
 	int nb_zero;
@@ -37,26 +37,26 @@ static void ft_puthex(t_printf *vars, t_flags *flags, int nb_char)
 		ft_putstr(&(vars->arg[i]));
 }
 
-void display_hex(t_printf * vars, t_flags * flags, int nb_char, int nb_space)
+void		display_hex(t_printf *vars, t_flags *fl, int nb_char, int nb_space)
 {
-	if (flags->flag == '-')
+	if (fl->flag == '-')
 	{
-		ft_puthex(vars, flags, nb_char);
+		ft_puthex(vars, fl, nb_char);
 		ft_putnchar(' ', nb_space);
 	}
-	else if (flags->flag == '0')
+	else if (fl->flag == '0')
 	{
-		if (nb_space > 0 && flags->precision == -1)
-			ft_puthex(vars, flags, nb_space + nb_char);
+		if (nb_space > 0 && fl->precision == -1)
+			ft_puthex(vars, fl, nb_space + nb_char);
 		else
 		{
 			ft_putnchar(' ', nb_space);
-			ft_puthex(vars, flags, nb_char);
+			ft_puthex(vars, fl, nb_char);
 		}
 	}
 	else
 	{
 		ft_putnchar(' ', nb_space);
-		ft_puthex(vars, flags, nb_char);
+		ft_puthex(vars, fl, nb_char);
 	}
 }

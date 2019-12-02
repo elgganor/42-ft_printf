@@ -12,7 +12,7 @@
 
 #include "../ft_printf.h"
 
-static char *get_char(char type, va_list ap)
+static char	*get_char(char type, va_list ap)
 {
 	char *arg;
 
@@ -26,7 +26,7 @@ static char *get_char(char type, va_list ap)
 	return (arg);
 }
 
-char *get_arg(t_printf *vars, va_list ap)
+char		*get_arg(t_printf *vars, va_list ap)
 {
 	char *arg;
 

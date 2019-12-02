@@ -6,7 +6,7 @@
 /*   By: mrouabeh <mrouabeh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/27 22:45:13 by mrouabeh          #+#    #+#             */
-/*   Updated: 2019/11/27 22:45:14 by mrouabeh         ###   ########.fr       */
+/*   Updated: 2019/12/02 14:11:13 by mrouabeh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,26 +38,26 @@ static void	ft_putint(t_printf *vars, t_flags *flags, int nb_char)
 		ft_putstr(&(vars->arg[i]));
 }
 
-void display_int(t_printf *vars, t_flags *flags, int nb_char, int nb_space)
+void		display_int(t_printf *vars, t_flags *fl, int nb_char, int nb_space)
 {
-	if (flags->flag == '-')
+	if (fl->flag == '-')
 	{
-		ft_putint(vars, flags, nb_char);
+		ft_putint(vars, fl, nb_char);
 		ft_putnchar(' ', nb_space);
 	}
-	else if (flags->flag == '0')
+	else if (fl->flag == '0')
 	{
-		if (nb_space > 0 && flags->precision == -1)
-			ft_putint(vars, flags, nb_space + nb_char);
+		if (nb_space > 0 && fl->precision == -1)
+			ft_putint(vars, fl, nb_space + nb_char);
 		else
 		{
 			ft_putnchar(' ', nb_space);
-			ft_putint(vars, flags, nb_char);
+			ft_putint(vars, fl, nb_char);
 		}
 	}
 	else
 	{
 		ft_putnchar(' ', nb_space);
-		ft_putint(vars, flags, nb_char);
+		ft_putint(vars, fl, nb_char);
 	}
 }

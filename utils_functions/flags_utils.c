@@ -12,9 +12,9 @@
 
 #include "../ft_printf.h"
 
-t_flags *flag_init()
+t_flags	*flag_init(void)
 {
-	t_flags *flags;
+	t_flags	*flags;
 
 	if (!(flags = (t_flags *)malloc(sizeof(t_flags))))
 		return (NULL);
@@ -24,10 +24,9 @@ t_flags *flag_init()
 	return (flags);
 }
 
-
 char	get_flag(const char *format, int *index)
 {
-	char flag;
+	char	flag;
 
 	flag = format[*index];
 	while (format[*index] == '0' || format[*index] == '-')
@@ -39,12 +38,11 @@ char	get_flag(const char *format, int *index)
 	return (flag);
 }
 
-
-int	get_width(const char *format, int *index, char *flag)
+int		get_width(const char *format, int *index, char *flag)
 {
-	char *width;
-	int i;
-	int size;
+	char	*width;
+	int		i;
+	int		size;
 
 	i = *index;
 	size = 0;
@@ -67,12 +65,11 @@ int	get_width(const char *format, int *index, char *flag)
 	return (i);
 }
 
-
-int	get_precision(const char *format, int *index, t_flags *flags)
+int		get_precision(const char *format, int *index, t_flags *flags)
 {
-	char *precision;
-	int i;
-	int size;
+	char	*precision;
+	int		i;
+	int		size;
 
 	i = *index;
 	size = 0;
@@ -95,11 +92,11 @@ int	get_precision(const char *format, int *index, t_flags *flags)
 	return (i);
 }
 
-int get_precision_star(const char *format, int *index, t_flags *flags)
+int		get_precision_star(const char *format, int *index, t_flags *flags)
 {
-	char *precision;
-	int i;
-	int size;
+	char	*precision;
+	int		i;
+	int		size;
 
 	i = *index;
 	size = 0;

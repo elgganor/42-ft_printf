@@ -14,7 +14,7 @@
 
 char	get_type(const char *format, int index)
 {
-	char type;
+	char	type;
 
 	if (is_valide_type(format[index]) == 1)
 		type = format[index];
