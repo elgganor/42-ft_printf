@@ -25,7 +25,7 @@ int get_precision_star(const char *format, int *index, t_flags *flags)
 		flags->flag = '-';
 		i++;
 		(*index)++;
-		return (1);
+		return (-1);
 	}
 	while (ft_isdigit(format[i++]))
 		size++;
@@ -37,32 +37,5 @@ int get_precision_star(const char *format, int *index, t_flags *flags)
 	precision[i] = '\0';
 	i = ft_atoi(precision);
 	free(precision);
-	return (i);
-}
-
-int get_width_star(const char *format, int *index, char *flag)
-{
-	char *width;
-	int i;
-	int size;
-
-	i = *index;
-	size = 0;
-	if (format[i] == '-')
-	{
-		*flag = '-';
-		i++;
-		(*index)++;
-	}
-	while (ft_isdigit(format[i++]))
-		size++;
-	if (!(width = (char *)malloc(sizeof(char) * (size + 1))))
-		return (-1);
-	i = 0;
-	while (ft_isdigit(format[*index]))
-		width[i++] = format[(*index)++];
-	width[i] = '\0';
-	i = ft_atoi(width);
-	free(width);
 	return (i);
 }

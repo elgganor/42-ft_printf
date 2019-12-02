@@ -29,7 +29,7 @@ static void	ft_putint(t_printf *vars, t_flags *flags, int nb_char)
 		ft_putnchar('0', nb_zero);
 	if (ft_atoi(vars->arg) == 0 && flags->precision == 0)
 	{
-		if (flags->width == -1)
+		if (flags->width == -1 || flags->width == 0)
 			vars->return_size--;
 		else
 			ft_putchar(' ');

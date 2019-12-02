@@ -25,7 +25,6 @@ void	manage_display(const char *f, t_printf *vars, va_list ap)
 	t_flags *flags;
 
 	flags = get_flags(f, &(vars->index), ap);
-	// print_flag(flags);
 	vars->type = get_type(f, vars->index);
 	vars->arg = get_arg(vars, ap);
 	ft_display(vars, flags);

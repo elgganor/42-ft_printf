@@ -60,11 +60,11 @@ void			display_char(t_printf *v, t_flags *fl, int nchar , int space);
 void			display_str(t_printf *v, t_flags *fl, int nchar , int space);
 void			display_int(t_printf *v, t_flags *fl, int nchar , int space);
 void			display_hex(t_printf *v, t_flags *fl, int nchar , int space);
-void			ft_putnchar(char c, size_t n);
-void			ft_putnstr(char *str, size_t n);
+void			ft_putnchar(char c, int n);
+void			ft_putnstr(char *str, int n);
 int				get_precision(const char *f, int *index, t_flags *flags);
 int				get_width(const char *f, int *index, char *flag);
 char			get_flag(const char *f, int *index);
-int				get_precision_star(const char *f, int *index, t_flags *flags);
+int				get_precision_star(const char *f, int *index, t_flags *fl);
 int				get_width_star(const char *f, int *index, char *flag);
 #endif

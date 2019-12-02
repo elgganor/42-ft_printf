@@ -12,13 +12,13 @@
 
 #include "../ft_printf.h"
 
-void	ft_putnchar(char c, size_t n)
+void	ft_putnchar(char c, int n)
 {
 	while (n-- > 0)
 		ft_putchar(c);
 }
 
-void	ft_putnstr(char *str, size_t n)
+void	ft_putnstr(char *str, int n)
 {
 	int	i;
 

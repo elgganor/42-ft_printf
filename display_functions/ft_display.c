@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
+#include <stdio.h>
 
 void	ft_display(t_printf *vars, t_flags *flags)
 {
