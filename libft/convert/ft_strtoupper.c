@@ -1,6 +1,6 @@
 #include "../libft.h"
 
-char *ft_strtoupper(char *s)
+char	*ft_strtoupper(char *s)
 {
 	int	i;
 

@@ -12,9 +12,9 @@
 
 #include "../libft.h"
 
-static int get_size(long n)
+static int	get_size(long n)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	if (n < 0)
@@ -30,11 +30,11 @@ static int get_size(long n)
 	return (size + 1);
 }
 
-char *ft_ltoa(long n)
+char		*ft_ltoa(long n)
 {
-	int size;
-	int i;
-	char *dest;
+	int		size;
+	int		i;
+	char	*dest;
 
 	if (n < -9223372036854775807)
 		return ("-9223372036854775808");

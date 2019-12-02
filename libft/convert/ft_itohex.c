@@ -12,9 +12,9 @@
 
 #include "../libft.h"
 
-static int get_size(long l)
+static int	get_size(long l)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	while (l != 0)
@@ -25,20 +25,20 @@ static int get_size(long l)
 	return (size);
 }
 
-static long convert_neg(long l)
+static long	convert_neg(long l)
 {
-	unsigned long max;
+	unsigned long	max;
 
 	max = 4294967296;
 	return (max + l);
 }
 
-char *ft_itohex(long l)
+char		*ft_itohex(long l)
 {
-	char *base;
-	char *dest;
-	int size;
-	int i;
+	char	*base;
+	char	*dest;
+	int		size;
+	int		i;
 
 	base = ft_strdup("0123456789abcdef");
 	if (l == 0)

@@ -12,18 +12,18 @@
 
 #include "../libft.h"
 
-long ft_atol(char *str)
+long	ft_atol(char *str)
 {
-	int i;
-	int sign;
-	long res;
+	int		i;
+	int		sign;
+	long	res;
 
 	i = 0;
 	sign = 1;
 	if (str)
 	{
 		while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' ||
-			   str[i] == '\n' || str[i] == '\r' || str[i] == '\f')
+				str[i] == '\n' || str[i] == '\r' || str[i] == '\f')
 			i++;
 		if (str[i] == '-' || str[i] == '+')
 		{

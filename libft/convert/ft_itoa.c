@@ -25,7 +25,7 @@ static unsigned int	ft_get_size(unsigned int n)
 	return (size + 1);
 }
 
-char			*ft_itoa(int n)
+char				*ft_itoa(int n)
 {
 	unsigned int	nb;
 	unsigned int	size;

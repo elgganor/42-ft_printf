@@ -12,9 +12,9 @@
 
 #include "../libft.h"
 
-static int get_size(unsigned long l)
+static int				get_size(unsigned long l)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	while (l != 0)
@@ -25,7 +25,7 @@ static int get_size(unsigned long l)
 	return (size);
 }
 
-static unsigned long convert_neg(long l)
+static unsigned long	convert_neg(long l)
 {
 	unsigned long max;
 
@@ -33,7 +33,7 @@ static unsigned long convert_neg(long l)
 	return (max + l + 1);
 }
 
-char *ft_ltohex(long l)
+char					*ft_ltohex(long l)
 {
 	unsigned long	n;
 	char			*base;
