@@ -42,7 +42,7 @@ char *get_arg(t_printf *vars, va_list ap)
 	}
 	else if (vars->type == 'x' || vars->type == 'X')
 	{
-		arg = ft_ltohex(va_arg(ap, int));
+		arg = ft_itohex(va_arg(ap, int));
 		arg = (vars->type == 'X') ? ft_strtoupper(arg) : arg;
 	}
 	else if (vars->type == 'p')

@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 
 typedef unsigned char	t_uchar;
 typedef struct	s_list
@@ -42,6 +43,7 @@ int				ft_atoi(const char *str);
 int				ft_abs(int i);
 char			*ft_itoa(int n);
 char			*ft_ltohex(long l);
+char			*ft_itohex(long n);
 char			*ft_strtoupper(char *s);
 unsigned int	ft_itou(int n);
 char			*ft_ltoa(long n);

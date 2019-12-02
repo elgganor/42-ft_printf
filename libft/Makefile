@@ -29,6 +29,7 @@ CHECKER=./checker/ft_islower.c \
 CONVERT=./convert/ft_tolower.c \
 	./convert/ft_toupper.c \
 	./convert/ft_ltohex.c \
+	./convert/ft_itohex.c \
 	./convert/ft_strtoupper.c \
 	./convert/ft_itou.c \
 	./convert/ft_ltoa.c \

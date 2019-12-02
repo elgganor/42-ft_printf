@@ -23,3 +23,74 @@ t_flags *flag_init()
 	flags->precision = -1;
 	return (flags);
 }
+
+
+char	get_flag(const char *format, int *index)
+{
+	char flag;
+
+	flag = format[*index];
+	while (format[*index] == '0' || format[*index] == '-')
+	{
+		if (format[*index] == '-')
+			flag = '-';
+		(*index)++;
+	}
+	return (flag);
+}
+
+
+int	get_width(const char *format, int *index, char *flag)
+{
+	char *width;
+	int i;
+	int size;
+
+	i = *index;
+	size = 0;
+	if (format[i] == '-')
+	{
+		*flag = '-';
+		i++;
+		(*index)++;
+	}
+	while (ft_isdigit(format[i++]))
+		size++;
+	if (!(width = (char *)malloc(sizeof(char) * (size + 1))))
+		return (-1);
+	i = 0;
+	while (ft_isdigit(format[*index]))
+		width[i++] = format[(*index)++];
+	width[i] = '\0';
+	i = ft_atoi(width);
+	free(width);
+	return (i);
+}
+
+
+int	get_precision(const char *format, int *index, t_flags *flags)
+{
+	char *precision;
+	int i;
+	int size;
+
+	i = *index;
+	size = 0;
+	if (format[i] == '-')
+	{
+		flags->flag = '-';
+		i++;
+		(*index)++;
+	}
+	while (ft_isdigit(format[i++]))
+		size++;
+	if (!(precision = (char *)malloc(sizeof(char) * (size + 1))))
+		return (-1);
+	i = 0;
+	while (ft_isdigit(format[*index]))
+		precision[i++] = format[(*index)++];
+	precision[i] = '\0';
+	i = ft_atoi(precision);
+	free(precision);
+	return (i);
+}

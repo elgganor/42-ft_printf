@@ -7,6 +7,7 @@ SRCS=ft_printf.c \
 	./get_functions/get_char_numbers.c \
 	./get_functions/get_space_numbers.c \
 	./utils_functions/flags_utils.c \
+	./utils_functions/flags_utils2.c \
 	./utils_functions/check_types.c \
 	./utils_functions/display_utils.c \
 	./display_functions/ft_display.c \
