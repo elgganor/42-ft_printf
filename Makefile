@@ -22,22 +22,20 @@ FLAGS=-Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@make -C libft
-	@cp libft/libft.a $(NAME)
-	@ar rc $(NAME) $^
-	@ranlib $(NAME)
+	make -C libft
+	cp libft/libft.a $(NAME)
+	ar rc $(NAME) $^
+	ranlib $(NAME)
 .o: .c
-	@gcc $(FLAGS) -o $@ -c $<
+	gcc $(FLAGS) -o $@ -c $<
 clean:
-	@make clean -C libft
-	@rm -f $(OBJ)
+	make clean -C libft
+	rm -f $(OBJ)
 
 fclean: clean
-	@make fclean -C libft
-	@rm -f $(NAME)
+	make fclean -C libft
+	rm -f $(NAME)
 
 re: fclean all
 
 .PHONY: all clean fclean re
-
-.SILENT: $(OBJ)
